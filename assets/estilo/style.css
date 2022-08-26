@@ -31,11 +31,14 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
     background-color: var(--bg-body);
+    overflow-x: hidden;
+ 
 }
 
 /* CSS REUTILIZÁVEL */
@@ -53,68 +56,89 @@ li, a {
 /* HEADER */
 
 header {
-    width: 100%;
     height: 80px;
-
     background-color: var(--bg-header);
-
 }
 
-#header-container {
-    width: 100%;
-    height: 100%;
-
+    #header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#header-container .header-logo {
-    display: flex;
-    align-items: center;
-
     height: 100%;
+    }
 
-}
+    #header-container .header-logo h1 {
+    color: var(--light);
+    font-size: 3rem;
+    }
 
-#header-container .header-logo img {
-    width: 200px;
-}
-
-.menu-section {
-    width: 30%;
-    height: 100%;
+input[type='checkbox'] {
+    appearance: none;
     position: relative;
-
-    
-    
-}
-
-.menu-toggle {
-    width: 50px;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-    position: absolute;
-    
-    
-}
-
-.menu-toogle .one,
-.two,
-.three {
-    width: 80%;
+    width: 30px;
     height: 3px;
-    margin-block: 5px;
-    background-color: white;
 
+    background-color: var(--light-mais-1);
+}
+
+    input[type='checkbox']::before {
+    content: "";
+    width: 30px;
+    height: 3px;
     position: absolute;
-}
+    top: 10px;
 
-nav ul {
-    display: none;
+
+    background-color: var(--light-mais-1);
+    }
+
+    input[type='checkbox']::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: -10px;
+
+    background-color: var(--light-mais-1);
+    }
+
+    input[type="checkbox"]:checked ~ *.menu {
+        visibility: visible;
+      }
+
+.menu {
+    display:block;
+    width: 100vw;
+    height: auto;
+
+    position:absolute;
+    left: 0;
+    top:80px;
+
+    visibility: hidden;
+    
+    text-align: center;
+    background-color: var(--bg-header);
 }
+  
+    .menu li {
+    width: 100%;
+    }
+  
+  
+  
+    .menu li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    
+    width: 100%;
+    padding: 25px;
+    } 
+  
+    .menu li a:active {
+    background-color: var(--secundaria-1);
+    }
+
