@@ -272,24 +272,24 @@ h2 {
     margin-bottom: 8.0rem;
 }
 
-#quem--sou h1 {
+#quemsou h1 {
     margin-bottom: 1.8rem;
 }
 
-#quem--sou .quem--sou--img {
+#quemsou .quem--sou--img {
     display: flex;
     flex-direction: column;
     align-self: center;
 
 }
 
-#quem--sou .quem--sou--img img {
+#quemsou .quem--sou--img img {
     width: 70%;
     margin:-30px auto;
 
 }
 
-#quem--sou .quem--sou--img p {
+#quemsou .quem--sou--img p {
     color: var(--light-mais-1);
     font-size: 1.4rem;
     text-align: center;
