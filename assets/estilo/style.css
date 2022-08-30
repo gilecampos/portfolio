@@ -17,7 +17,7 @@
     --light-mais-1: #B8B0B0;
 
     /* COR HEADER */
-    --bg-header:rgba(12, 10, 16, 0.8);
+    --bg-header:rgba(12, 10, 16, 0.45);
 
     /* COR BODY */
     --bg-body: #18181E;
@@ -179,7 +179,7 @@ input[type='checkbox'] {
     visibility: hidden;
     
     text-align: center;
-    background-color: var(--bg-header);
+    background-color: rgba(12, 10, 16, 0.8);
 }
   
     .menu li {
