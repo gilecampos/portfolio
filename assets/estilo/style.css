@@ -44,7 +44,7 @@ body {
 /* CSS REUTILIZÁVEL */
 
 .container {
-    max-width: 90%;
+    max-width: 92%;
     margin: auto;
 }
 
@@ -87,7 +87,7 @@ span {
     transition: .5s ease;
 }
 
-.btn-gradiente:hover {
+.btn-gradiente:active {
     background: linear-gradient(to right, var(--secundaria-1), var(--primaria-1));
     border: 1px solid var(--primaria);
 }
@@ -108,7 +108,7 @@ span {
     transition: .5s ease;
 }
 
-.btn-solid:hover {
+.btn-solid:active {
     background-color: var(--primaria);
 }
 
@@ -232,6 +232,7 @@ main {
 .home--content h1,
 h2 {
     margin-bottom: .8rem;
+    text-align: center;
 }
 
 .home--content .home--buttons {
@@ -251,11 +252,76 @@ h2 {
 }
 
 
-
-
-
-
-
 #home .home--img {
     display: none;
+}
+
+
+/* QUEM SOU */
+
+#quem--sou {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quem--sou h1 {
+    margin-bottom: 1.8rem;
+}
+
+#quem--sou .quem--sou--img {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+#quem--sou .quem--sou--img img {
+    width: 70%;
+    margin:-30px auto;
+
+}
+
+#quem--sou .quem--sou--img p {
+    color: var(--light-mais-1);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.quem--sou--content {
+    width: 100%;
+
+    margin-top: 1.6rem;
+}
+
+.quem--sou--content p {
+    font-size: 1.4rem;
+    color: var(--light);
+    text-indent: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: .1rem;
+}
+
+.quem--sou--socials {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 24px 0;
+}
+
+.quem--sou--socials img {
+    width: 30px;
+}
+
+.quem--sou--buttons .btn-gradiente, .btn-solid {
+    margin-bottom: 1.6rem;
+    font-weight: normal;
+}
+
+.quem--sou--buttons .btn-gradiente img,
+.quem--sou--buttons .btn-solid img{
+    margin-right: .8rem;
 }
