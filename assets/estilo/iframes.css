@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #18181E;
+}
+
+.universal img {
+    width: 55px;
+
+    padding: 10px;
+    border: 1px solid #E51D37;
+    transition: .5s ease;
+}
+
+.purple {
+    border: 1px solid rgb(94, 9, 94);
+
+    width: 55px;
+
+    padding: 10px;
+    transition: .5s ease;
+}
+
