@@ -53,6 +53,67 @@ li, a {
     list-style-type: none;
 }
 
+h2 {
+    color: var(--light-mais-1);
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h1 {
+    color: var(--light);
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+span {
+    color: var(--primaria);
+    font-weight: bolder;
+}
+
+.btn-gradiente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, var(--secundaria), var(--primaria));
+    border: 1px solid var(--primaria-mais-1);
+    color: var(--light);
+
+    width: 100%;
+    height: 50px;
+    font-size: 2.2rem;
+    font-weight: 500;
+
+    transition: .5s ease;
+}
+
+.btn-gradiente:hover {
+    background: linear-gradient(to right, var(--secundaria-1), var(--primaria-1));
+    border: 1px solid var(--primaria);
+}
+
+.btn-solid {
+    border: 1px solid var(--primaria);
+
+    width: 100%;
+    height: 50px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .5s ease;
+}
+
+.btn-solid:hover {
+    background-color: var(--primaria);
+}
+
+
+
 /* HEADER */
 
 header {
@@ -133,7 +194,6 @@ input[type='checkbox'] {
         color: #FFF;
         font-family: Arial, sans-serif;
         font-size: 1.8rem;
-        
         width: 100%;
         padding: 25px;
     } 
@@ -141,4 +201,62 @@ input[type='checkbox'] {
     .menu li a:active {
         background-color: var(--secundaria-1);
     }
+
+/* HOME */
+
+main {
+    width: 100vw;
+    height: auto;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.home--content {
+    width: 100%;
+    height: 90%;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home--content h1,
+h2 {
+    margin-bottom: .8rem;
+}
+
+.home--content .home--buttons {
+    margin-top: 3.2rem;
+}
+
+.home--content .home--buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.home--content .home--buttons .btn-gradiente {
+    margin-bottom: 2.4rem;
+}
+
+
+
+
+
+
+
+#home .home--img {
+    display: none;
+}
 
