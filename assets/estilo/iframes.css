@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    /* CORES PRIMÀRIAS */
+    --primaria: #E51D37;
+    --primaria-1: #FF475F;
+    --primaria-mais-1: #BF0F26;
+
+    /* CORES SECUNDÀRIAS */
+    --secundaria: #0C0A10;
+    --secundaria-1: #2D2936;
+
+    /* COR LIGHT */
+    --light: #FFFFFF;
+    --light-mais-1: #B8B0B0;
+
+    /* COR HEADER */
+    --bg-header:rgba(12, 10, 16, 0.45);
+
+    /* COR BODY */
+    --bg-body: #18181E;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,22 +36,41 @@
 
 body {
     background-color: #18181E;
+    font-family: 'Raleway', sans-serif;
 }
 
-.universal img {
-    width: 55px;
-
-    padding: 10px;
-    border: 1px solid #E51D37;
-    transition: .5s ease;
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.purple {
-    border: 1px solid rgb(94, 9, 94);
-
-    width: 55px;
-
-    padding: 10px;
-    transition: .5s ease;
+.ball-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 0.5px solid var(--primaria);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 5px;
+    
+}
+
+.ball img {
+    width: 30px;
+}
+
+.ball-content p {
+    font-size: 1.6rem;
+    color: var(--light-mais-1);
+}
