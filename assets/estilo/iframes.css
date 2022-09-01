@@ -40,7 +40,9 @@ body {
 }
 
 .container {
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -54,10 +56,9 @@ body {
 }
 
 .ball {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: 1px solid var(--primaria);
 
     display: flex;
     align-items: center;
@@ -68,12 +69,24 @@ body {
     
 }
 
+.front {
+    border: 1px solid var(--primaria);
+}
+
+.back {
+    border: 1px solid var(--light-mais-1);
+}
+
+.design {
+    border: 1px solid rgb(95, 6, 95);
+}
+
 .ball:hover {
     transform:scale(1.1);
 }
 
 .ball img {
-    width: 30px;
+    width: 40px;
 }
 
 .ball-content p {
