@@ -44,7 +44,7 @@ body {
 /* CSS REUTILIZÁVEL */
 
 .container {
-    max-width: 92%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -222,8 +222,6 @@ main {
     width: 100%;
     height: 90%;
 
-
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,7 +267,6 @@ h2 {
     align-items: center;
 
     padding-bottom: 4.0rem;
-
     margin-bottom: 8.0rem;
 }
 
@@ -281,13 +278,11 @@ h2 {
     display: flex;
     flex-direction: column;
     align-self: center;
-
 }
 
 #quemsou .quem--sou--img img {
     width: 70%;
     margin:-30px auto;
-
 }
 
 #quemsou .quem--sou--img p {
@@ -298,7 +293,6 @@ h2 {
 
 .quem--sou--content {
     width: 100%;
-
     margin-top: 1.6rem;
 }
 
@@ -321,8 +315,6 @@ h2 {
     width: 30px;
 }
 
-
-
 .quem--sou--buttons .btn-gradiente, .btn-solid {
     margin-bottom: 1.6rem;
     font-weight: normal;
@@ -342,7 +334,6 @@ h2 {
 
     width: 100vw;
     height: 90vh;
-
     margin-bottom: 4.8rem;
 }
 
@@ -353,7 +344,6 @@ h2 {
 .skills--options {
     width: 100%;
     height: auto;
-
     margin-top: 4.0rem;
     margin-bottom: 4.0rem;
 }
@@ -363,11 +353,12 @@ h2 {
     width: 100%;
     color: var(--light);
     font-size: 2rem;
+    
+    padding: 15px;
+    margin-bottom: 4px;
 
     background-color: var(--secundaria);
-    padding: 15px;
     border-left: 5px solid transparent;
-    margin-bottom: 4px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 
@@ -386,11 +377,7 @@ h2 {
     border-left: 5px solid rgb(94, 9, 94);
 }
 
-.skills--content {
-    width: 100%;
-    height: 100%;
-}
-
+.skills--content,
 .skills--content iframe {
     width: 100%;
     height: 100%;
@@ -412,7 +399,6 @@ h2 {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 1.6rem;
-
     margin-top: 4.8rem;
 }
 
@@ -420,7 +406,9 @@ h2 {
     width: 90%;
     height: 270px;
     padding: 10px;
+
     text-align: center;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,10 +427,3 @@ h2 {
     font-size: 1.6rem;
     color: var(--light-mais-1);
 }
-
-
-
-
-
-
-
