@@ -50,20 +50,26 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 10px;
 }
 
 .ball {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 0.5px solid var(--primaria);
+    border: 1px solid var(--primaria);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     margin-bottom: 5px;
+    transition: all .5s ease;
     
+}
+
+.ball:hover {
+    transform:scale(1.1);
 }
 
 .ball img {
