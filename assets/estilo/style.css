@@ -113,6 +113,12 @@ span {
     background-color: var(--primaria);
 }
 
+abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+  }
+
 
 
 /* HEADER */
@@ -334,7 +340,8 @@ h2 {
 
     width: 100vw;
     height: 90vh;
-    margin-bottom: 4.8rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 #skills h1 {
@@ -392,6 +399,9 @@ h2 {
     
     width: 100%;
     height: auto;
+
+    padding-bottom: 10rem;
+    padding-top: 10rem;
 }
 
 .services--content {
@@ -427,3 +437,74 @@ h2 {
     font-size: 1.6rem;
     color: var(--light-mais-1);
 }
+
+
+/* PROJECTS */
+
+#projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+}
+
+.projeto--content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2.4rem;
+    margin-top: 4.8rem;
+
+    width: 100%;
+}
+
+.projeto--card {
+    width: 90%;
+    height: 270px;
+    padding: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid var(--primaria);
+}
+
+.projeto--card h2 {
+    color: var(--light);
+    font-weight: bold;
+    font-size: 2.6rem;
+
+    margin-bottom: 1.8rem;
+}
+
+.projeto--card p {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: var(--light-mais-1);
+    line-height: 2.6rem;
+
+    margin-bottom: 3.2rem;
+} 
+
+.projeto--card a {
+    align-self: center;
+    color: var(--primaria);
+    font-size: 1.8rem;
+
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--primaria);
+}
+
+#nvt {
+    border: 1px solid #75b2ba;
+}
+
+#nvt a {
+    color: #75b2ba;
+    border-bottom: 1px solid #75b2ba;
+}
+
