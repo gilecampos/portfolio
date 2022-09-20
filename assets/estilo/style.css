@@ -17,7 +17,7 @@
     --light-mais-1: #B8B0B0;
 
     /* COR HEADER */
-    --bg-header:rgba(12, 10, 16, 0.45);
+    --bg-header:rgb(12, 10, 16);
 
     /* COR BODY */
     --bg-body: #18181E;
@@ -135,15 +135,10 @@ header {
         height: 100%;
     }
 
-    #header-container .header-logo h1 {
-        color: var(--light);
-        font-size: 3rem;
-    }
-
 input[type='checkbox'] {
     appearance: none;
     position: relative;
-    width: 30px;
+    width: 35px;
     height: 3px;
 
     background-color: var(--light-mais-1);
@@ -151,11 +146,10 @@ input[type='checkbox'] {
 
     input[type='checkbox']::before {
         content: "";
-        width: 30px;
+        width: 40px;
         height: 3px;
         position: absolute;
         top: 10px;
-
 
         background-color: var(--light-mais-1);
     }
@@ -193,16 +187,15 @@ input[type='checkbox'] {
         width: 100%;
     }
   
-  
-  
     .menu li a {
         display: block;
+        width: 100%;
+        padding: 25px;
+
         text-decoration: none;
         color: #FFF;
         font-family: Arial, sans-serif;
         font-size: 1.8rem;
-        width: 100%;
-        padding: 25px;
     } 
   
     .menu li a:active {
@@ -219,14 +212,13 @@ main {
 #home {
     display: grid;
     grid-template-columns: 1fr;
-
     width: 100%;
     height: calc(100vh - 80px);
 }
 
 .home--content {
     width: 100%;
-    height: 90%;
+    height: 100%;
 
     display: flex;
     align-items: center;
@@ -240,11 +232,11 @@ h2 {
     text-align: center;
 }
 
-.home--content .home--buttons {
+.home--buttons {
     margin-top: 3.2rem;
 }
 
-.home--content .home--buttons {
+.home--buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,10 +244,9 @@ h2 {
     width: 100%;
 }
 
-.home--content .home--buttons .btn-gradiente {
+.btn-gradiente {
     margin-bottom: 2.4rem;
 }
-
 
 #home .home--img {
     display: none;
@@ -267,13 +258,12 @@ h2 {
 #quemsou {
     width: 100%;
     height: auto;
+    padding-bottom: 4.0rem;
+    margin-bottom: 8.0rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding-bottom: 4.0rem;
-    margin-bottom: 8.0rem;
 }
 
 #quemsou h1 {
@@ -293,13 +283,13 @@ h2 {
 
 #quemsou .quem--sou--img p {
     color: var(--light-mais-1);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
 .quem--sou--content {
     width: 100%;
-    margin-top: 1.6rem;
+    margin-top: 2.4rem;
 }
 
 .quem--sou--content p {
@@ -312,9 +302,8 @@ h2 {
 
 .quem--sou--socials {
     display: flex;
-    justify-content: space-between;
-
-    margin: 24px 0;
+    gap: 15px;
+    margin: 3.2rem 0 1.6rem 0;
 }
 
 .quem--sou--socials img {
@@ -358,11 +347,11 @@ h2 {
 .skills--options a {
     display: block;
     width: 100%;
-    color: var(--light);
-    font-size: 2rem;
-    
     padding: 15px;
     margin-bottom: 4px;
+
+    color: var(--light);
+    font-size: 2rem;
 
     background-color: var(--secundaria);
     border-left: 5px solid transparent;
@@ -399,7 +388,6 @@ h2 {
     
     width: 100%;
     height: auto;
-
     padding-bottom: 10rem;
     padding-top: 10rem;
 }
