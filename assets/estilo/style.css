@@ -262,16 +262,14 @@ h2 {
 #quemsou {
     width: 100%;
     height: auto;
-    padding-bottom: 4.0rem;
-    margin-bottom: 8.0rem;
-
+    padding-bottom: 8.0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #quemsou h1 {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.6rem;
 }
 
 #quemsou .quem--sou--img {
@@ -291,7 +289,7 @@ h2 {
 
 #quemsou .quem--sou--img p {
     color: var(--light-mais-1);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -315,7 +313,7 @@ h2 {
 }
 
 .quem--sou--socials img {
-    width: 30px;
+    width: 25px;
 }
 
 
@@ -338,8 +336,8 @@ h2 {
 
     width: 100vw;
     height: 90vh;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-bottom: 4.8rem;
+    margin-top: 4.8rem;
 }
 
 #skills h1 {
@@ -349,24 +347,23 @@ h2 {
 .skills--options {
     width: 100%;
     height: auto;
-    margin-top: 4.0rem;
-    margin-bottom: 4.0rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .skills--options a {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 1.5rem;
     margin-bottom: 4px;
-
-    color: var(--light);
-    font-size: 2rem;
-
-    background-color: var(--secundaria);
     border-left: 5px solid transparent;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 
+    color: var(--light);
+    font-size: 1.8rem;
+    background-color: var(--secundaria);
+    
     transition: all .5s ease;
 }
 
